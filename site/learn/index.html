@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>learn - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">index</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../oneflow/" class="nav-link">oneflow</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../general/" class="nav-link">general</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">learn</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../leetcode/" class="nav-link">leetcode</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../general/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../leetcode/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">统计学习</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link">计算机系统</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">统计学习</h1>
+<ul>
+<li>统计学习的分类 </li>
+<li>监督学习
+  本质是学习输入到输出的映射规律，该映射由模型来表示，最好的模型属于映射空间，该空间也成为假设空间。</li>
+</ul>
+<p>假设输入与输出的随机变量X，Y，遵循联合概率分布<em>P(X,Y)</em>，预测可写作<em>P(y|x)</em>,or <em>y=f(x)</em></p>
+<ul>
+<li>无监督学习</li>
+</ul>
+<p>本质是学习数据中心的统计规律或潜在结构</p>
+<ul>
+<li>
+<p>强化学习</p>
+</li>
+<li>
+<p>半监督与主动学习</p>
+</li>
+<li>
+<p>贝叶斯学习
+  本质是利用贝叶斯定理，计算在给定数据条件下模型的条件概率，即后验概率</p>
+</li>
+</ul>
+<p><strong>贝叶斯估计和极大似然估计在思想上有很大的不同，代表统计学中贝叶斯学派和统计学派对统计的不同认识？？？</strong> 假设先验分布是均匀分布，去后验概率最大，就能从贝叶斯估计得到极大似然估计</p>
+<p>上一点不懂的可参照 <a href="https://www.cnblogs.com/sylvanas2012/p/5058065.html">https://www.cnblogs.com/sylvanas2012/p/5058065.html</a></p>
+<ul>
+<li>核方法
+  线性到非线性：求映射--&gt;求映射后的内积。</li>
+</ul>
+<p>核函数直接定义内积，完成映射</p>
+<ul>
+<li>
+<p>统计学习方法三要素</p>
+</li>
+<li>
+<p>模型</p>
+</li>
+</ul>
+<p>所要学习的条件概率分布或者决策函数，即确定假设空间。</p>
+<ul>
+<li>策略</li>
+</ul>
+<p>按照怎样的准则在假设空间中选择最优模型</p>
+<p>损失函数--只能得到经验损失，样本量小时，经验损失不能代表真正的期望风险，使用正则化对经验损失进行优化=结构风险：</p>
+<pre><code>· 过拟合 训练误差逐渐减小然而测试误差将先减小后增大
+
+· 正则化包括两项，一个函数为模型复杂度，另一个是超参数，主要是为了缓解过拟合（模型越复杂，正则化项越大，对于损失函数的惩罚也就越大，可以达到由于模型复杂度高而造成的过拟合现象）
+
+· 交叉验证 将数据分为训练、验证、测试集
+</code></pre>
+<ul>
+<li>可参考资料
+<a href="https://zhuanlan.zhihu.com/p/35141478">https://zhuanlan.zhihu.com/p/35141478</a></li>
+</ul>
+<h1 id="_2">计算机系统</h1>
+<ul>
+<li>1.1 信息
+  源文件由bit（位0,1）表示，8bit=1字节，用1字节表示1字符，32位系统4字节=1字长，64位系统8字节=1字长</li>
+</ul>
+<p>信息是由<code>bit和上下文信息</code>表示的，同样的字节序列在不同的解释方式下可以表达不同的信息</p>
+<ul>
+<li>1.2 编译系统
+  源文件(文本文件.c)--[<code>预处理器</code>(cp,导包，修改源文件)]---&gt;
+  源文件(被修改的源.i)---[<code>编译器</code>(ccl,修改为汇编语言)]--&gt;
+  汇编程序(汇编文本文件.s)---[<code>汇编器</code>(as)]--&gt;
+  机器语言指令(二进制文件.o)---[<code>连接器</code>(ld,合并调用的标准库函数的.o文件)]---&gt;
+  可执行程序</li>
+<li>1.3 硬件组成
+  .c文件储存在磁盘</li>
+</ul>
+<p>io系统输入--&gt;外壳shell接收输入--&gt;将命令存入寄存器--&gt;将命令存入主存--&gt;命令结束./hello</p>
+<p>磁盘将编译好的数据和code复制到主存，主存再将其复制到寄存器，寄存器再将其复制到io显示设备</p>
+<p>上述过程复制过程冗余，高速缓存出现。存储器结构层次可以帮助加快执行效率--<code>上一层的存储器作为下一层存储器的高速缓存</code>。传统中，寄存器就是主存的高速缓存，寄存器容量下，所以读取速度快。新型的存储器结构是在寄存器下多了三层<code>L1，L2，L3</code>的高速缓存</p>
+<p>网络可以看成一个特殊的io设备</p>
+<ul>
+<li>1.4 操作系统</li>
+</ul>
+<p>操作系统是软件与硬件的中间件，通过一系列软件对硬件的抽象表示，提供有效简单的管理硬件的方法。其中包括<code>将io设备抽象为文件，将io设备和主存抽象为虚拟存储器，将io设备、主存、处理器cpu抽象为进程</code>。</p>
+<ul>
+<li>1.5 进程，并发，并行
+  一个系统可以同时运行多个进程，这是通过操作系统对多个进程指令进行<code>交错执行</code>实现的</li>
+</ul>
+<p>虚拟存储器-为每个进程提供存储唯一的假象。包括了程序代码和数据、堆（标准函数库）、共享库、用户栈（运行时用户定义的函数）</p>
+<ul>
+<li>2.1 信息存储
+   8 bit = 1 byte 一字节是最小的可寻址的存储器单元，二进制表示的值域为00000000-11111111，转换为十进制为0-255，转换为16进制为00-FF</li>
+</ul>
+<p>十进制与十六进制互相转化</p>
+<p>二进制与十六进制相互转化，将十六进制的每一个位，转换为十进制，根据十进制的数字转换为四个位的二进制，十六进制的一位表示16，而二进制的四个位2^4也等于16，所以0xFFFFFFFB =&gt; 1111 1111 1111 1111 1111 1111 1111 1011</p>
+<p>字长，表明了整数和指针数据的标称大小，决定了虚拟空间地址的最大大小，32位的系统，虚拟地址空间为2的31次方bit，也就是4GB。</p>
+<p>C语言中char 1B,short 2B, int 4B, 长整数和指针长度等于机器的字长（这里8）,float=4B, double=8B</p>
+<p>大小端 ：
+    0x12345678 怎么放置到内存中？</p>
+<pre><code>将数据的低位（78），放到内存地址的低位，这种放置的方式，小端方式，little endian
+
+将数据的高位（12），放到内存地址的低位，这种方式的方式，大端方式，big endian
+
+x86 芯片、ARM 默认 小端方式。
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

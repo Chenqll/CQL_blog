@@ -1,17 +1,44 @@
-# Welcome to MkDocs
+基础知识
+=========
+## 数学
+### 线性代数
+- 向量，矩阵，运算，`范数`，`特征向量`，`特征值`
+### 高数
+- 导数、微分、积分
+- 梯度
+- `泰勒展开公式`
+- `概率论`---“b站视频：一个小时快速回顾概率论”
+## python
+### 廖雪峰官方
+- https://www.liaoxuefeng.com/wiki/1016959663602400/1183249464292448
+### 数据处理实战
+- 利用python进行数据分析 https://github.com/iamseancheney/python_for_data_analysis_2nd_chinese_version
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 机器学习理论入门
+### 李航-统计学习
+- 不用看每章，不用从零造轮子
+- *手推公式*，斜体章节必须手推公式
+- 只看第1,2,*4*,*5*,*6逻辑回归*,*8*，*xgboost*
+### 刘建平博客
+- 统计学习不会的可以用这个blog进行补充https://www.cnblogs.com/pinard/category/894692.html
 
-## Commands
+## 机器学习实战入门
+### 阿里云天池大赛赛题解析（机器学习篇）
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 深度学习入门 邱老师的书ipad notability
+### NLP cs224 P1-P5,P8,9 P11
+- 文本分类
+- 文本匹配
+- 序列标注
+- 文本生成
+### CV
+- 图像理解
+    - 分类，检测，分割，追踪
+- 图像生成- GAN
 
-## Project layout
+## 深度学习实战入门
+### NLP 自然语言处理-新闻文本分类
+### CV-街景符号识别
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 面试题
+### 百面机器学习

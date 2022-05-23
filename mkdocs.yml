@@ -2,3 +2,7 @@ site_name: My Docs
 nav:
   - index: index.md
   - oneflow: oneflow.md
+  - general: general.md
+  - learn: learn.md
+  - leetcode: leetcode.md
+  
